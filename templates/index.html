@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Finance Dashboard 💎</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="glass-container">
+
+   
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()">🌙 / ☀️</button>
+    </div>
+
+    <h1>Premium Finance Dashboard 💎</h1>
+    <p class="subtitle">Full kontroll over økonomien din</p>
+
+    
+    <div class="kpi-container">
+        <div class="kpi-card income-card">
+            <h3>Inntekt</h3>
+            <p id="total-income">0 kr</p>
+        </div>
+
+        <div class="kpi-card expense-card">
+            <h3>Utgifter</h3>
+            <p id="total-expense">0 kr</p>
+        </div>
+
+        <div class="kpi-card balance-card">
+            <h3>Balanse</h3>
+            <p id="balance">0 kr</p>
+        </div>
+    </div>
+
+   
+    <div class="filters">
+        <input type="month" id="monthFilter">
+        <input type="text" id="searchInput" placeholder="Søk...">
+    </div>
+
+    
+    <div class="form">
+        <input type="text" id="name" placeholder="Hva gjelder det?">
+        <input type="number" id="amount" placeholder="Beløp i kr">
+        <input type="date" id="date">
+
+        <select id="category">
+            <option value="Food">Mat 🍔</option>
+            <option value="Transport">Transport 🚗</option>
+            <option value="Subscription">Abonnement 📱</option>
+            <option value="Salary">Lønn 💰</option>
+            <option value="Other">Annet 💼</option>
+        </select>
+
+        <select id="type">
+            <option value="expense">Utgift ❌</option>
+            <option value="income">Inntekt ✅</option>
+        </select>
+
+        <button onclick="addExpense()">Legg til</button>
+    </div>
+
+    
+    <div id="expense-list"></div>
+
+    
+    <div class="charts">
+        <canvas id="barChart"></canvas>
+        <canvas id="pieChart"></canvas>
+    </div>
+
+</div>
+
+
+
+<footer class="footer">
+
+    <div class="footer-box">
+        <h3>Kontakt 📞</h3>
+        <p>Email: kontakt@nimafinance.com</p>
+        <p>Telefon: +47 123 45 678</p>
+        <p>Oslo, Norge 🇳🇴</p>
+        <p>Mandag – Fredag: 09:00 – 16:00</p>
+    </div>
+
+    <div class="footer-box">
+        <h3>Om Plattformen 💎</h3>
+        <p>Denne plattformen er utviklet for å gi deg full kontroll over din personlige økonomi.</p>
+        <p>Bygget med Flask, SQLite, Chart.js og moderne frontend-teknologi.</p>
+        <p>Designet med fokus på struktur, oversikt og ytelse.</p>
+    </div>
+
+    <div class="footer-box">
+        <h3>Informasjon ℹ️</h3>
+        <p>Alle data lagres lokalt på din enhet.</p>
+        <p>Ingen tredjeparts sporing.</p>
+        <p>Utviklet av Nima 🚀</p>
+        <p>Versjon 1.0</p>
+    </div>
+
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
