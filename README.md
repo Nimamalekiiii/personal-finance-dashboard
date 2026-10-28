@@ -1,5 +1,7 @@
 # Personal Finance Dashboard 💰
 
+> 🚧 **Work in progress** – this project is still under development, and more changes are coming.
+
 A web-based personal finance dashboard built with Python, Flask, SQLite and JavaScript.
 
 ## 📌 About
