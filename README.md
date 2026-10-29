@@ -1,10 +1,10 @@
-# Personal Finance Dashboard 💰
+# Personal Finance Dashboard 
 
-> 🚧 **Work in progress** – this project is still under development, and more changes are coming.
+>  **Work in progress** – this project is still under development, and more changes are coming.
 
 A web-based personal finance dashboard built with Python, Flask, SQLite and JavaScript.
 
-## 📌 About
+##  About
 
 Personal Finance Dashboard is a web application designed to provide a clear overview of personal income and expenses.
 
@@ -43,7 +43,7 @@ The project was developed as a practical exercise in full-stack web development,
 - Particles.js
 - Google Fonts
 
-## 🗄️ Database
+##  Database
 
 The application uses SQLite for local data storage.
 
